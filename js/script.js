@@ -120,4 +120,26 @@ console.log(arrayUno);
 // /SNACK 4
 // SNACK 5
 
+
+
+// INSERISCO MIN
+let myStringP = prompt('Inserisci la stringa');
+let minL;
+do{
+  minL = parseInt(prompt('inserisci il minimo (limite minimo consentito 0)'));
+}while(minL < 0);
+console.log(minL);
+// INSERISCO MAX
+let maxL;
+do{
+  maxL = parseInt(prompt('inserisci il massimo (limite consentito: ' + (myStringP.length - 1) + ')')) ;
+}while(maxL > myStringP.length -1);
+console.log(maxL);
+
+tagliaStringa(minL, maxL, myStringP);
+function tagliaStringa(minL, maxL, myStringP) {
+  console.log(myStringP.slice(minL,maxL+1));
+}
+
+
 // /SNACK 5
