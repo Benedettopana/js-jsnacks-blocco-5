@@ -106,3 +106,18 @@ function reverseStr(myString) {
 
 console.log(reverseStr('ciao'));
 // /SNACK 3
+// SNACK 4
+const arrayUno = ['a', 'b', 'c'];
+const arrayDue = [1,2,3];
+arrayUno.forEach((element, index) => {
+  
+  arrayUno.splice(index + index + 1 ,0,arrayDue[index]);
+  console.log(arrayUno);
+})
+
+console.log(arrayUno);
+
+// /SNACK 4
+// SNACK 5
+
+// /SNACK 5
