@@ -51,6 +51,8 @@ const zucchine = [
   }
 ];
 
+
+// SNACK 1
 const arrayZuc = [];
 zucchine.forEach((element, index) => {
   console.log('elemento: ', element);
@@ -66,4 +68,34 @@ const pesoTotZucchine = arrayZuc.reduce( (totale, numero) => {
   console.log('>>>>>> ', totale);
   return totale + numero;
 })
-console.log(pesoTotZucchine);
+console.log(pesoTotZucchine, ' gr');
+
+// /SNACK 1
+
+// SNACK 2
+const arrayZucchineBig = [];
+const arrayZucchineLit = [];
+let totBig = 0;
+let totLit = 0;
+zucchine.forEach((element) =>{
+  const {lunghezza} = element;
+  const {peso} = element;
+
+  if(lunghezza > 15){
+    arrayZucchineBig.push(element);
+    totBig += peso;
+
+    
+  }else {
+    arrayZucchineLit.push(element);
+    totLit += peso;
+  }
+})
+
+console.log('Il peso delle zucchine grandi è: ' + totBig + 'gr');
+console.log('Il peso delle zucchine piccole è: ' + totLit+ 'gr');
+// /SNACK 2
+
+// SNACK 3
+
+// /SNACK 3
