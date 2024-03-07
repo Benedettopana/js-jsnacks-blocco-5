@@ -97,5 +97,12 @@ console.log('Il peso delle zucchine piccole è: ' + totLit+ 'gr');
 // /SNACK 2
 
 // SNACK 3
+const prova = 'ciao';
 
+function reverseStr(myString) {
+  return myString.split('').reverse().join('');
+  
+}
+
+console.log(reverseStr('ciao'));
 // /SNACK 3
